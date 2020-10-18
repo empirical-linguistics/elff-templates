@@ -178,6 +178,22 @@ p {
     background: none
 }
 
+/* links */
+a:link {
+	font-style: normal;
+	text-decoration: none;
+}
+
+a:visited {
+	font-style: normal;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red
+}
+
+
 /* progress bar */
 
 
@@ -250,3 +266,24 @@ p {
 	color: #e9e6e6;
   }
   
+  /* Page transitions */
+  .animate-in {
+    -webkit-animation: fadeIn .9s ease-in;
+    animation: fadeIn .9s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .9s;
+    transition: opacity .9s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

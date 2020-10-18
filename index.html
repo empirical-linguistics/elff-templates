@@ -29,7 +29,7 @@
   
 
 <!-- main body -->
-<body>
+<body class="animate-in">
 <div id="header">
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
@@ -141,8 +141,18 @@
   
 	  </div>
   
-  
+	  <div id="next"><span style="font-size:25px;float:right;"> <a href="quiz/quiz.html">></a> </div></span>
+
+
 
 </body>
+
+<!-- fade effect-->
+<script>
+	window.addEventListener("beforeunload", function () {
+		document.body.classList.add("animate-out");
+	  });
+	</script>  
+
 </div>
 </html> 
