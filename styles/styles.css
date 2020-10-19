@@ -22,6 +22,16 @@ body {
 	font-size: 13pt;
 }
 
+
+/* code elements */
+code {
+	font-family: Consolas,"courier new";
+	color: rgb(128, 73, 84);
+	background-color: #f1f1f1;
+	padding: 2px;
+	font-size: 105%;
+  }
+
 /* Header / Title */
 .header {
     padding: 0px;
@@ -237,6 +247,13 @@ a:hover {
 	  bottom: 0;
 	  height:50%;
 	  width:50%;
+  }
+
+  /* images */
+  img{
+	  width: 100%;
+	  height: auto;
+
   }
 
   /* icomoon font */
