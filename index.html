@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
 	<title>Insert title</title>
@@ -10,6 +10,7 @@
 	<script src="scripts/smoothscroll.js"></script>
 	<script src="scripts/progressbar.js"></script>
 	<script src="scripts/justified.js"></script>
+	<script src="scripts/fontsize.js"></script>
 	<link rel="stylesheet" href="styles/styles.css">
 
 	<!-- show navigation bar -->
@@ -38,11 +39,28 @@
 		<a href="#lorem">Lorem ipsum</a>
 		<a href="#ipsum">Ipsum lorem</a>
 		<a href="#further">Further reading</a>
+		<p style="leftnavicons">
+		<div class="sidenav-bottom">
+			<a style="cursor: pointer" onclick="leftalign()" id="trigram">
+				<img id="align" src="img/leftaligned-icon.svg"></img>
+			</a>
+		</div>
 		<div class="sidenav-bottom">
 			<a style="cursor: pointer" onclick="justify()" id="trigram">
 				<img id="align" src="img/justified-icon.svg"></img>
 			</a>
 		</div>
+		<div class="sidenav-bottom">
+			<a style="cursor: pointer" onclick="decrfont()" id="trigram">
+				<img id="align" src="img/textsmaller.svg"></img>
+			</a>
+		</div>
+		<div class="sidenav-bottom">
+			<a style="cursor: pointer" onclick="incrfont()" id="trigram">
+				<img id="align" src="img/textbigger.svg"></img>
+			</a>
+		</div>
+	</p>
 		<!-- <a href="#bla"><img class="bottom" src = "img/justified-icon.png"></img></a> -->
 	  </div>
 

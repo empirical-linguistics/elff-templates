@@ -7,10 +7,11 @@ body {
   background-color: #fefefe;
   font-family: Open Sans, Arial;
   font-size: 13pt;
-  margin-left: 60px;
+  margin-left: 80px;
   margin-right: 90px;
   margin-bottom: 100px;
-  text-align: left
+  text-align: left;
+  hyphens: auto;
 }
 
 /* use this style for inline code examples */
@@ -127,11 +128,15 @@ p {
   background-color: #fefefe;
   color: black;
   font-family: Open Sans, Arial;
-  font-size: 13pt
 }
 
 .bottomnav{
 	background-color: transparent;
+}
+
+.leftnavicons{
+	margin-left: 2px;
+	margin-right: 2px;
 }
 
 /* Style for accordions */

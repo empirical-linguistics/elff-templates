@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="13.558038mm"
-   height="13.558038mm"
-   viewBox="0 0 13.558038 13.558038"
+   width="22.25149mm"
+   height="22.25149mm"
+   viewBox="0 0 22.25149 22.25149"
    version="1.1"
    id="svg8"
    inkscape:version="1.0 (4035a4f, 2020-05-01)"
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70000001"
-     inkscape:cx="85.48205"
-     inkscape:cy="131.41825"
+     inkscape:cx="85.482061"
+     inkscape:cy="131.41826"
      inkscape:document-units="mm"
      inkscape:current-layer="layer4"
      inkscape:document-rotation="0"
@@ -34,22 +34,22 @@
      inkscape:window-width="1252"
      inkscape:window-height="687"
      inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:window-y="303"
      inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0">
     <sodipodi:guide
-       position="17.649656,-9.484229"
+       position="17.649658,-0.79077966"
        orientation="-9.5964548,-0.25096063"
        id="guide1210" />
     <sodipodi:guide
-       position="17.583256,-2.4998588"
+       position="17.583258,6.1935907"
        orientation="-9.5964586,0.25096063"
        id="guide1212" />
     <sodipodi:guide
-       position="16.393796,0.056781239"
+       position="16.393798,8.7502306"
        orientation="-1.1338583e-05,0"
        id="guide1214" />
   </sodipodi:namedview>
@@ -69,22 +69,22 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-122.11793,-73.934294)" />
+     transform="translate(-122.11792,-73.934291)" />
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Layer 2"
-     transform="translate(-122.11793,-73.934294)" />
+     transform="translate(-122.11792,-73.934291)" />
   <g
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Layer 3"
-     transform="translate(-122.11793,-73.934294)">
+     transform="translate(-122.11792,-73.934291)">
     <g
        inkscape:export-ydpi="300"
        inkscape:export-xdpi="300"
-       inkscape:export-filename="/Users/stefanhartmann/empiricalmethods-logo-favicon.png"
-       transform="matrix(0.45193458,0,0,0.45193458,66.928617,40.520833)"
+       inkscape:export-filename="/Users/stefanhartmann/empiricalmethods-logo-small.png"
+       transform="matrix(0.74171629,0,0,0.74171629,31.541073,19.096026)"
        id="g887">
       <circle
          transform="translate(1.0833333e-6)"
