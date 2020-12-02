@@ -35,7 +35,7 @@
 <div id="header">
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
-		<img src="img/empiricalmethods-logo-favicon.png" style="padding-left:60px;padding-bottom:20px;width:60%;height:auto;"></img>
+		<img src="img/empiricalmethods-logo-favicon.png" style="padding-left:60px;padding-bottom:20px;width:50%;height:auto;"></img>
 		<a href="#About">Einführung</a>
 		<a href="#lorem">Software</a>
 		<a href="#ipsum">Arbeit mit Templates</a>
@@ -51,7 +51,7 @@
 				<img id="align" src="img/justified-icon.svg"></img>
 			</a>
 		</div>
-		<div class="sidenav-bottom">
+<!-- 		<div class="sidenav-bottom">
 			<a style="cursor: pointer" onclick="decrfont()" id="trigram">
 				<img id="align" src="img/textsmaller.svg"></img>
 			</a>
@@ -60,7 +60,7 @@
 			<a style="cursor: pointer" onclick="incrfont()" id="trigram">
 				<img id="align" src="img/textbigger.svg"></img>
 			</a>
-		</div>
+		</div> -->
 	</p>
 		<!-- <a href="#bla"><img class="bottom" src = "img/justified-icon.png"></img></a> -->
 	  </div>
@@ -78,7 +78,7 @@
 
 	  <h3>Zu diesen Templates</h3>
 	  <p>Dies ist eine Sammlung von sehr einfachen Templates, die im Rahmen des E-Learning-Projekts "Empirische Methoden für die Sprachwissenschaft" entstanden sind. Mit ihnen lassen sich Tutorials mit Text- und Bildelementen sowie einfachen Wissensabfragen erstellen. Die Templates stehen - wie auch die Tutorials selbst - unter einer Creative-Commons-Lizenz zur Verfügung und können gern weiterverwendet und modifiziert werden.</p>
-	  <p>Die Idee hinter den Templates - und diesem Tutorial - ist, Personen ohne bzw. mit nur </p>
+	  <p>Die Idee hinter den Templates - und diesem Tutorial - ist, Personen ohne bzw. mit nur wenigen HTML-Kenntnissen die Nutzung des Templates zu ermöglichen.</p>
 
 	  <h3>Zur Verwendung der Templates</h3>
 	  <p>In die hier zur Verfügung gestellten Templates können Text- und Bildmaterial für einzelne Tutorials eingepflegt werden. Dafür sind nur sehr grundlegende HTML-Kenntnisse erforderlich. Im Folgenden werden die wichtigsten dargestellt. Zunächst werfen wir einen Blick auf die Software, die benötigt wird, um mit den Templates zu arbeiten, anschließend schauen wir uns an, wie man Text und Bilder einfügt. (Fast) alles andere erledigt das Template von allein.</p>
@@ -122,26 +122,20 @@
 		
 		<img src="img/struktur.png"></img>
 
-		<p>Wie der Screenshot zeigt, sind die einzelnen Elemente des Textes in sog. <strong>Tags</strong> eingeschlossen, z.B. <code>&lt;p&gt;...&lt;/p&gt;</code>. Diese Tags geben dem Text die passende Formatierung, die in der zugehörigen CSS-Datei definiert ist (diese liegt im Ordner "css", kann aber getrost ignoriert werden, solange man nichts Grundlegendes am Erscheinungsbild der Seite verändern will). In <code>&lt;p&gt;...&lt;/p&gt;</code> (für "paragraph") werden die einzelnen Absätze eingeschlossen. Folgende weitere Tags sollte man noch kennen:</p>
+		<p>Wie der Screenshot zeigt, sind die einzelnen Elemente des Textes in sog. <strong>Tags</strong> eingeschlossen, z.B. <code>&lt;p&gt;...&lt;/p&gt;</code>. Diese Tags geben dem Text die passende Formatierung, die in der zugehörigen CSS-Datei definiert ist (diese liegt im Ordner "css", kann aber getrost ignoriert werden, solange man nichts Grundlegendes am Erscheinungsbild der Seite verändern will). In <code>&lt;p&gt;...&lt;/p&gt;</code> (für "paragraph") werden die einzelnen Absätze eingeschlossen. Folgende weitere Tags sollte man noch kennen (in allen Fällen gilt, dass der entsprechende Textabschnitt immer mit einem schließenden Tag abgeschlossen werden muss, auch wo das nicht explizit angegeben ist - also kein <code>&lt;p&gt;</code> ohne schließendes <code>&lt;/p&gt;</code>!):</p>
 
 		<ul>
 			<li><code>&lt;strong&gt;</code> <strong>Fettdruck</strong></li>
 			<li><code>&lt;i&gt;</code> <i>kursiv ("italics")</i> </li>
+			<li><code>&lt;h2&gt;</code>Überschrift zweiter Ordnung</li>
+			<li><code>&lt;h3&gt;</code>Überschrift dritter Ordnung (entsprechend h4 etc.)</li>
+			<li><code>&lt;a href="url" target="_blank"&gt;<a href="#">klick mich</a>&lt;/a&gt;</code>Hyperlink. Anstelle von <code>url</code> muss hier die tatsächliche URL eingetragen werden, z.B. https://empirical-linguistics.github.io/elff-templates. <code>target="_blank"</code> sorgt dafür, dass der Link in einem neuen Tab geöffnet wird.</li>
+			<li><code>&lt;code&gt;</code> Hiermit wird Text <code>als Code formatiert</code>.</li>
 		</ul>
+
+		<p>Zur Nutzung des Templates genügt es also, Text in die Quelldatei zu copy&pasten und mit Hilfe der genannten Tags zu formatieren.</p>
   
-		<p> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	  
-		  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-		  
-		  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-		  
-		  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-		  
-		  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
-		  
-		  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-		  
-		  Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  </p>
+		
   
 	  </div>
 
@@ -150,21 +144,18 @@
 
 	<div class="main" id="further">
 
-		<h2>Further reading</h2>
+		<h2>Bilder einfügen</h2>
   
-		<p> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	  
-		  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-		  
-		  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-		  
-		  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-		  
-		  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
-		  
-		  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-		  
-		  Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  </p>
+		<p>Um Bilder einzufügen, kann man den <code>&lt;img</code>-Tag benutzen. Das unten stehende Bild wurde mit folgendem Code generiert:</p>
+
+		<code> &lt;img src="img/doors-1767563_1920.jpg" alt="Stühle" title="Das ist ein Testbild"&gt;
+		</code>
+
+		<p>Dass der Code hier dargestellt wird und nicht als Befehl interpretiert wird, hier ein Bild einzufügen, liegt übrigens daran, dass ich die spitzen Klammern im Quellcode durch "& l t ;" (Whitespace entfernen) ersetzt habe. Das <code>alt</code>-Element bewirkt, dass erstens ein kurzer Erklärtext angezeigt wird, falls das Bild aus irgendwelchen Gründen nicht geladen wird, und zweitens Screenreader eine Beschreibung des Bilds liefern können.</p>
+		
+		<p>Weiterführende Informationen hierzu und zu vielen anderen Themen rund um HTML finden sich <a href="https://www.w3schools.com/html/html_images.asp" target="_blank">hier</a>.</p>
+
+		<img src="img/doors-1767563_1920.jpg" alt="chairs" title="Das ist ein Testbild">
   
 	  </div>
   

@@ -4,8 +4,8 @@
 var is_nav_open = false
  
 function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
-  document.getElementById("main").style.marginLeft = "300px";
+  document.getElementById("mySidenav").style.width = "280px";
+  document.getElementById("main").style.marginLeft = "280px";
   is_nav_open = true
 }
 
