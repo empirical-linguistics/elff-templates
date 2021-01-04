@@ -134,7 +134,43 @@
 		</ul>
 
 		<p>Zur Nutzung des Templates genügt es also, Text in die Quelldatei zu copy&pasten und mit Hilfe der genannten Tags zu formatieren.</p>
+
+		<h3>Tatstaturkürzel definieren</h3>
+
+		<p>Gerade für häufig gebrauchte Tags ist es sinnvoll, sie nicht jedesmal manuell einzupflegen, sondern ein Tastaturkürzel dafür zu definieren. Im Folgenden zeige ich, wie das in VS Code geht, basierend auf <a href="https://stackoverflow.com/a/46854557" target="_blank">dieser</a> Stackoverflow-Antwort. Näheres zur Definition von Keybindings in VS Code findet man in der entsprechenden <a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank">Anleitung</a>.</p>
+
+		<p>Über File > Preferences > Keyboard Shortcuts (Mac: Code > Preferences > Keyboard Shortcuts) gehen wir zunächst in das Menü, in dem die existierenden Tastenkombinationen zu sehen sind. Neben den existierenden Shortcuts verstecken sich in der Liste jedoch auch Optionen, mit deren Hilfe wir benutzerdefinierte Keybindings erstellen können. Dafür gehen wir in "Preferences: Open Keyboard Shortcuts (JSON)". Dabei können wir das Suchfenster oben zu Hilfe nehmen:</p>
+
+		<img src="img/define-shortcuts.png">
   
+		<p>Im sich nun öffnenden Editor-Fenster sehen Sie vermutlich ein noch weitgehend leeres Dokument, das ungefähr so aussieht:</p>
+
+		<div class="code">
+
+		<pre>// Place your key bindings in this file to overwrite the defaults
+[
+]</pre>
+
+		</div>
+
+		<p>Wenn wir beispielsweise die in Tastenkombination Strg+F (bzw. Command+F) verwenden wollen, um Fettdruck zu erzeugen, dann können wir den entsprechenden Befehl in diese Datei schrieben, die dann so aussieht:</p>
+
+		<div class="code">
+		<pre>
+// Place your key bindings in this file to overwrite the defaults
+	[{
+		"key": "cmd+f",
+		"command": "editor.emmet.action.wrapWithAbbreviation",
+		"when": "editorHasSelection",
+		"args": {
+			"abbreviation": "strong"
+		}
+	},
+	]</pre>
+
+		</div>
+
+		<p>Jetzt können wir Text markieren und mit Strg+F den markierten Text in <code>&lt;strong&gt;</code>-Tags "wrappen". </p>
 		
   
 	  </div>
@@ -155,9 +191,10 @@
 		
 		<p>Weiterführende Informationen hierzu und zu vielen anderen Themen rund um HTML finden sich <a href="https://www.w3schools.com/html/html_images.asp" target="_blank">hier</a>.</p>
 
+
 		<img src="img/doors-1767563_1920.jpg" alt="chairs" title="Das ist ein Testbild">
-  
-	  </div>
+	</div>
+	  
   
 	  <div id="next"><span style="font-size:25px;float:right;"> <a href="quiz/quiz.html">></a> </div></span>
 

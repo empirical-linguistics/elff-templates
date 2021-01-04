@@ -32,6 +32,11 @@ code {
 	font-size: 105%;
   }
 
+  .code {
+	font-family: Consolas,"courier new";
+	background-color: #f1f1f1;
+}
+
 /* Header / Title */
 .header {
     padding: 0px;
@@ -291,6 +296,19 @@ a:hover {
   .icon-leftaligned-icon:before {
 	content: "\27f5";
 	color: #e9e6e6;
+  }
+
+  /*Fade-in animations */
+  .fade {
+  background-color: #fefefe;
+  font-family: Open Sans, Arial;
+  font-size: 13pt;
+  margin-left: 80px;
+  margin-right: 90px;
+  margin-bottom: 100px;
+  text-align: left;
+  hyphens: auto;
+	opacity: 1;
   }
   
   /* Page transitions */
